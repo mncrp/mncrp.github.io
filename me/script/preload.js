@@ -1,16 +1,4 @@
 window.addEventListener('DOMContentLoaded',()=>{
-  document.getElementsByTagName('head')[0].innerHTML=`
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5YC697Z9G"></script>
-  <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'G-E5YC697Z9G');
-  </script> 
-  ${document.getElementsByTagName('head')[0].innerHTML}
-  `
   document.body.innerHTML=`<header><h1>Sorakime<a href="/mncr/" style="font-size: 10px;">Do you want to go to mncrS?</a></h1></header>
   ${document.body.innerHTML}`
   document.querySelector('main').innerHTML=`${document.querySelector('main').innerHTML}
@@ -44,4 +32,4 @@ window.addEventListener('DOMContentLoaded',()=>{
     </div>
     <small>Copyright 2021 Sorakime All rights reserved.</small>
   </footer>`;
-}) 
+})
