@@ -43,4 +43,4 @@ window.addEventListener('DOMContentLoaded',()=>{
     </div>
     <small>Copyright 2021 Sorakime All rights reserved.</small>
   </footer>`;
-})
+}) 
