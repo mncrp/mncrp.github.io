@@ -11,15 +11,18 @@ window.addEventListener('DOMContentLoaded',()=>{
       </span>
       <span>
         <h4>SNSなど</h4>
-        <p><a href="https://twitter.com/Sorakime_" target="_blank">Twitter</a>
-        <p><a href="https://www.instagram.com/sorakime_">Instagram</a></p>
-        <p><a href="https://www.youtube.com/channel/UCtTYek-N2sjl_9z-GS-IjAA"   arget="_blank">YouTube</a></p>
-      </span>
-      <span>
-        <h4><span></span></h4>
-        <p><a href="https://note.com/sorakime">note</a></p>
-        <p><a href="https://anchor.fm/Sorakime">Anchor</a></p>
-        <p><a href="https://github.com/Sorakime">GitHub</a></p>
+        <p>
+          <a href="https://twitter.com/Sorakime_" target="_blank">Twitter</a>
+          <a href="https://note.com/sorakime">note</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/sorakime_">Instagram</a>
+          <a href="https://anchor.fm/Sorakime">Anchor</a>
+        </p>
+        <p>
+          <a href="https://www.youtube.com/channel/UCtTYek-N2sjl_9z-GS-IjAA" target="_blank">YouTube</a>
+          <a href="https://github.com/Sorakime">GitHub</a>
+         </p>
     </span>
       <span>
         <h4>所属グループ</h4>
