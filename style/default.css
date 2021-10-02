@@ -82,11 +82,19 @@ footer>div{
 }
 footer div span{
   display: inline-block;
-  width: 100%;
-}
-footer div span{
+  width: 50%;
   margin: 0 7.5px;
 }
+footer div span:nth-child(2){
+  width: 100%;
+}
+footer div span:nth-child(2)>p{
+  display: flex;
+}
+footer div span:nth-child(2)>p>a{
+  width: 50%;
+}
+
 footer h4{
   font-weight: 300;
 }
