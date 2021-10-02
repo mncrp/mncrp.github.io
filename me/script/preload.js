@@ -30,6 +30,6 @@ window.addEventListener('DOMContentLoaded',()=>{
         <h4>必読</h4>
         <p><a href="/me/agreement">規約など</a></p>
     </div>
-    <small>Copyright 2021 Sorakime All rights reserved.</small>
+    <small>Copyright &copy; 2021 Sorakime All rights reserved.</small>
   </footer>`;
 })
