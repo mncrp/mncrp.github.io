@@ -30,6 +30,7 @@ header>span{
 header a{
   user-select: auto;
   -ms-user-select: auto;
+  vertical-align: middle;
 }
 
 @media (prefers-color-scheme: dark) {
