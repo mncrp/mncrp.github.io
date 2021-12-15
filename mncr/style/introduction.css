@@ -10,6 +10,7 @@ intro-duction{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: #fff;
 }
 intro-duction p{
   font-size: 20px;
@@ -28,6 +29,9 @@ intro-duction#presentation div{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+intro-duction#presentation div>*,intro-duction#presentation div>*:active{
+  color: #fff!important;
 }
 
 /*for Monot*/
