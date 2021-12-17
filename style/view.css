@@ -1,12 +1,3 @@
-/**/
-main{
-  scroll-snap-type: y mandatory;
-  overflow: auto;
-}
-main>*{
-  scroll-snap-align: start;
-}
-
 body, main{
   margin: 0;
   padding: 0;
