@@ -48,6 +48,22 @@ intro-duction#monot div{
   bottom: 50px; left: 0; right: 0;
 }
 
+/*for Elemental*/
+intro-duction#elemental{
+  position: relative;
+  background-image: url('../images/elemental.jpg');
+}
+intro-duction#elemental>div{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  text-shadow: 0 0 15px #222;
+}
+intro-duction#elemental>div *{
+  text-align: left;
+}
+
 /*for Litest*/
 intro-duction#litest{
   background-image: url('../images/introduce/litest.jpg');

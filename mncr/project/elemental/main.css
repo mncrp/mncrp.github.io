@@ -25,6 +25,7 @@ main>div::before{
   background-size: cover;
   filter: brightness(80%) blur(5px);
   transition: all 2s ease-in-out;
+  background-attachment: fixed;
 }
 main>div[data-loaded]::before{
   opacity: 1;
@@ -32,6 +33,16 @@ main>div[data-loaded]::before{
 
 main>div h1{
   font-size: 40px;
+}
+img{
+  display: inline-block;
+  width: 30vmin;
+  height: 30vmin;
+}
+
+main>div#kaitenakatta{
+  width: 90vw;
+  left: 5vw;
 }
 
 h6{
@@ -44,4 +55,10 @@ h6{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (prefers-color-scheme: light) {
+  main>div::before{
+    filter: brightness(120%) blur(5px);
+  }
 }
