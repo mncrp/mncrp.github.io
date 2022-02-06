@@ -2,6 +2,6 @@ main{
   padding: 5px;
 }
 
-body{
+body, html, main{
   width: 100%;
 }
