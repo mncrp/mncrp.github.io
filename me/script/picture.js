@@ -60,15 +60,13 @@ function anim() {
   mbp2.style.top = `${scrollY / 2 - 75}px`;
 
   let sakura = document.getElementById('sakura');
-  if (sakura.getBoundingClientRect().top < windowHeight / 2) { //sakuraの座標がwindowの高さの半分なら
+  if (sakura.getBoundingClientRect().top > 0) {
     let sakura1 = document.getElementById('sakura-1');
     sakura1.style.height = `${
-      windowHeight / 2 + (windowHeight - sakura1.getBoundingClientRect().top)
+      50 + windowHeight / sakura1.getBoundingClientRect().top * 5
     }vh`;
-    console.log(windowHeight / 2 + windowHeight - sakura1.getBoundingClientRect().top);
-  } else {
-    let sakura1 = document.getElementById('sakura-1');
-    sakura1.style.height = `50vh`;
+    sakura.style.width = `calc(${sakura.style.width} + 1%)`
+    console.log(sakura.style.width);
   }
 }
 

@@ -70,17 +70,25 @@
 
 #sakura-1 {
   height: 50vh;
+  max-height: 100vh;
   top: 100px;
   opacity: 0;
   background-image: url('/me/image/sakura-1.jpg');
   background-position: bottom;
   background-size: cover;
-  transition: all 0.7s ease-in-out;
+  transition: none;
 }
 #sakura-1.showed {
-  top: 0;
-  opacity: 1;
+  animation: fluffy 0.7s ease-in-out 0s 1 normal both;
 }
-#sakura-1.animation {
-  
+
+@keyframes fluffy {
+  0% {
+    top: 100px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
