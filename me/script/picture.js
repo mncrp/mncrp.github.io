@@ -64,7 +64,7 @@ function anim() {
     let sakura1 = document.getElementById('sakura-1');
     sakura1.style.height = `${
       windowHeight / 2 + (windowHeight - sakura1.getBoundingClientRect().top)
-    }px`;
+    }vh`;
     console.log(windowHeight / 2 + windowHeight - sakura1.getBoundingClientRect().top);
   } else {
     let sakura1 = document.getElementById('sakura-1');
