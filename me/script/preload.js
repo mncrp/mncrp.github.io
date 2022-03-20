@@ -39,6 +39,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         <p>
           <a href="https://www.youtube.com/channel/UCtTYek-N2sjl_9z-GS-IjAA" target="_blank">YouTube</a>
         </p>
+        <p>
           <a href="https://github.com/Sorakime">GitHub</a>
         </p>
       </span>
