@@ -81,7 +81,7 @@ footer{
                            contrast(50%)
                            brightness(75%);
 }
-footer>div{
+footer > div{
   display: flex;
 }
 footer div span{
@@ -89,13 +89,10 @@ footer div span{
   width: 50%;
   margin: 0 7.5px;
 }
-footer div span:nth-child(2){
-  width: 100%;
-}
-footer div span:nth-child(2)>p{
+footer div span:nth-child(2) > p{
   display: flex;
 }
-footer div span:nth-child(2)>p>a{
+footer div span:nth-child(2) > p > a{
   width: 50%;
 }
 
@@ -131,7 +128,7 @@ footer a{
     width: calc(100% - 20px);
     padding: 5px 10px;
   }
-  main, main>div:nth-child(1){
+  main, main > div:nth-child(1){
     width: calc(100% - 30px);
     padding: 0 15px;
   }
@@ -149,18 +146,18 @@ footer a{
     left: 0; bottom: 0; right: 0;
     text-align: center;
   }
-  footer>div{
+  footer > div{
     position: relative;
     display: inline-block;
     width: auto;
     left: 50%;
     transform: translate(-50%, 0);
   }
-  footer>div>span{
+  footer > div > span{
     display: inline;
   }
 
-  footer>div>span h4{
+  footer > div > span h4{
     display: block;
   }
 }

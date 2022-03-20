@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 #top-slider {
   position: relative;
   background: none;
@@ -68,6 +71,9 @@
   background-image: url('/me/image/macbook-pro-1.jpg');
 }
 
+#sakura {
+  width: 100vw;
+}
 #sakura-1 {
   height: 50vh;
   max-height: 100vh;
@@ -79,7 +85,22 @@
   transition: none;
 }
 #sakura-1.showed {
+  background-attachment: fixed;
   animation: fluffy 0.7s ease-in-out 0s 1 normal both;
+}
+#sakura-2-container {
+  height: 100vh;
+}
+#sakura-2 {
+  height: 100%;
+  opacity: 0;
+  box-shadow: 0 -5px 30px #000;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('/me/image/sakura-2.jpg');
+}
+#sakura-2.showed {
+  animation: fluffy 2s ease-in-out 0s 1 normal both;
 }
 
 @keyframes fluffy {

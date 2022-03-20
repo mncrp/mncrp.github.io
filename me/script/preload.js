@@ -18,19 +18,27 @@ window.addEventListener('DOMContentLoaded',()=>{
         <h4>ページ</h4>
         <p><a href="/me/sitemap">サイトマップ</a></p>
         <p><a href="/me/music/">音楽</a></p>
+        <br>
+        <h4>必読</h4>
+        <p><a href="/me/agreement">規約など</a></p>
       </span>
       <span>
         <h4>SNSなど</h4>
         <p>
           <a href="https://twitter.com/Sorakime_" target="_blank">Twitter</a>
+        </p>
+        <p>
           <a href="https://note.com/sorakime">note</a>
         </p>
         <p>
           <a href="https://www.instagram.com/sorakime_">Instagram</a>
+        </p>
+        <p>
           <a href="https://anchor.fm/Sorakime">Anchor</a>
         </p>
         <p>
           <a href="https://www.youtube.com/channel/UCtTYek-N2sjl_9z-GS-IjAA" target="_blank">YouTube</a>
+        </p>
           <a href="https://github.com/Sorakime">GitHub</a>
         </p>
       </span>
@@ -39,11 +47,9 @@ window.addEventListener('DOMContentLoaded',()=>{
         <p><a href="https://escgrp.org">Escape Group</a></p>
         <p><a herf="https://liquidverse.tk">LiquidVerse</a></p>
         <p><a href="https://vcborn.com">VCborn</a></p>
-        <p>
+        <p><a href="https://thinking-grp.github.io">thinking</a></p>
+        <p>等</p>
       </span>
-      <span>
-        <h4>必読</h4>
-        <p><a href="/me/agreement">規約など</a></p>
     </div>
     <small>Copyright &copy; 2021 Sorakime All rights reserved.</small>
   </footer>`;
