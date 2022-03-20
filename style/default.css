@@ -74,8 +74,12 @@ footer{
   background-attachment: fixed;
   width: 50%;
   text-align: left;
-  backdrop-filter: blur(50px) contrast(50%) brightness(75%);
-  -webkit-backdrop-filter: blur(50px) contrast(50%) brightness(75%);
+  backdrop-filter: blur(50px)
+                   contrast(50%)
+                   brightness(75%);
+  -webkit-backdrop-filter: blur(50px)
+                           contrast(50%)
+                           brightness(75%);
 }
 footer>div{
   display: flex;
@@ -109,6 +113,7 @@ footer a{
   }
   header{
     background-color: #0004;
+    box-shadow:0 0 20px #6668;
   }
   header *{
     color: #fff;
@@ -158,4 +163,21 @@ footer a{
   footer>div>span h4{
     display: block;
   }
+}
+
+/* for not support backdrop-filter and -webkit-backdrop-filter */
+@supports (
+            not ( backdrop-filter: blur(15px) )
+          ) and (
+            not ( -webkit-backdrop-filter: blur(15px) )
+          ) {
+  header {
+    background-color: #fffe!important;
+  }
+  @media (prefers-color-scheme: dark) {
+    header {
+      background-color: #000e!important;
+    }
+  }
+
 }

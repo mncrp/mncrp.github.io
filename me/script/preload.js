@@ -1,6 +1,16 @@
 window.addEventListener('DOMContentLoaded',()=>{
-  document.body.innerHTML=`<header><h1>Sorakime<a href="/mncr/" style="font-size: 10px;">Do you want to go to mncrS?</a></h1></header>
-  ${document.body.innerHTML}`
+  document.body.innerHTML=`
+    <header>
+      <h1><a href="/me/">Sorakime</a></h1>
+      <div>
+        <div>
+          <a href="/me/picture/">Picture</a>
+          <a href="/me/music/">Music</a>
+        </div>
+      </div>
+    </header>
+    ${document.body.innerHTML}
+  `
   document.querySelector('main').innerHTML=`${document.querySelector('main').innerHTML}
   <footer>
     <div>
@@ -27,7 +37,9 @@ window.addEventListener('DOMContentLoaded',()=>{
       <span>
         <h4>所属グループ</h4>
         <p><a href="https://escgrp.org">Escape Group</a></p>
+        <p><a herf="https://liquidverse.tk">LiquidVerse</a></p>
         <p><a href="https://vcborn.com">VCborn</a></p>
+        <p>
       </span>
       <span>
         <h4>必読</h4>
@@ -35,4 +47,10 @@ window.addEventListener('DOMContentLoaded',()=>{
     </div>
     <small>Copyright &copy; 2021 Sorakime All rights reserved.</small>
   </footer>`;
+  document.head.innerHTML=`
+    ${document.head.innerHTML}
+    <link rel="stylesheet" href="/style/default.css">
+    <link rel="stylesheet" href="/me/style/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  `
 })
