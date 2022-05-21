@@ -1,0 +1,73 @@
+main div {
+  position: relative;
+}
+
+main #top {
+  text-align: center;
+  height: 50vh;
+  padding-top: 20px;
+}
+#top .main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main #root {
+  height: 30vh;
+  background-color: #ccc;
+}
+#root .main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main #design {
+  height: 40vh;
+}
+#design .main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .elemental {
+  margin-top: 20px;
+  position: relative;
+  width: 40vw;
+  height: 100px;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+.main .elemental::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-image: url('/image/top/elemental.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(75%);
+}
+.elemental .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 20px #fffa;
+}
+.elemental .text h3 {
+  font-weight: 500;
+  font-size: 25px;
+}
