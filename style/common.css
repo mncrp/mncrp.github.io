@@ -93,6 +93,7 @@ header > #pageTitle {
   left: -100vw;
   bottom: 0;
   width: 20vw;
+  min-width: 150px;
   height: 100vh;
   background-color: #0006;
   z-index: 9995;
@@ -133,4 +134,14 @@ main {
 footer {
   text-align: center;
   font-weight: 200;
+}
+
+a.content::after {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  header h1 {
+    display: none;
+  }
 }

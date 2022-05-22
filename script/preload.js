@@ -1,8 +1,28 @@
-pageTitle = function (){
+pageTitle = function() {
   try {
     return pageTitle;
   } catch (e) {
     return '';
+  }
+}();
+
+const style = function() {
+  const pathname = location.pathname;
+  if (
+    pathname !== '/' &&
+    pathname !== '/index' &&
+    pathname !== '/index.html' &&
+    pathname !== '/about/' &&
+    pathname !== '/about/index' &&
+    pathname !== '/about/index.html' &&
+    pathname !== '/project/' &&
+    pathname !== '/project/index' &&
+    pathname !== '/project/index.html'
+  ) {
+    document.head.innerHTML = `
+      ${document.head.innerHTML}
+      <link rel="stylesheet" href="/style/content.css">
+    `
   }
 }();
 

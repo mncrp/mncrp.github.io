@@ -1,0 +1,17 @@
+main {
+  padding: 40px calc(50vw - 650px);
+  width: 1300px;
+}
+
+@media (max-width: 1500px) {
+  main {
+    padding: 40px 10vw;
+    width: 80vw;
+  }
+}
+@media (max-width: 1000px) {
+  main {
+    padding: 40px 10px;
+    width: calc(100vw - 20px);
+  }
+}
