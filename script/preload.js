@@ -65,3 +65,140 @@ function menu() {
   document.getElementById('menu-button').classList.toggle('opened');
   document.getElementById('sidebar').classList.toggle('opened');
 }
+
+const developer = {
+  sorakime: {
+    name: 'Sorakime',
+    role: 'Representative',
+    via: '代表やっとりまっせ',
+    project: `
+      <a href="/project/litest">Litest</a>
+      <a href="/project/monot">Monot for Desktop</a>
+      <a href="/project/monodev">Monodev</a>
+    `,
+    link: `
+      <a href="https://youtube.com/Sorakime">YouTube</a>
+      <a href="https://soraki.me">僕のポートフォリオ的な</a>
+      <a href="https://twitter.com/Sorakime_">Twitter</a>
+    `
+  },
+  waryu_ynd: {
+    name: 'waryu_YND',
+    role: 'CTO',
+    via: 'monochrome Project.のお手伝いをしています。<br>後、CTOです。',
+    project: `
+      <a href="/project/litest">Litest</a>
+      <a href="/project/monot">Monot for Desktop</a>
+      <a href="/project/monodev">Monodev</a>
+    `,
+    link: `
+      <a href="https://twitter.com/waryu_ynd">Twitter</a>
+    `
+  },
+  zip: {
+    name: 'ZIP',
+    role: '',
+    via: '',
+    project: `
+      <a href="/project/monot/android">Monot for Android</a>
+    `,
+    link: `
+      <a href="#">Link</a>
+    `
+  },
+  comamoca: {
+    name: 'こまもか',
+    role: '',
+    via: 'Vim',
+    project: `
+      <a href="/project/litest">Litest</a>
+      <a href="/project/monot">Monot for Desktop</a>
+      <a href="/project/monodev">Monodev</a>
+    `,
+    link: `
+      <a href="https://twitter.com/Comamoca_?t=Zrf7UDDwWQKfdgJxv2BFCw&s=09">Twitter</a>
+    `
+  },
+  hidemal: {
+    name: 'ひでまる',
+    role: '',
+    via: 'Vimはいいぞ',
+    project: `
+      <a href="/project/litest">Litest</a>
+      <a href="/project/monot">Monot for Desktop</a>
+      <a href="/project/monot/android">Monot for Android</a>
+    `,
+    link: `
+      <a href="https://twitter.com/Hidemal_OwO">Twitter</a>
+    `
+  },
+  yukkuri_rmys: {
+    name: 'Yukkuri_RMYS',
+    role: '',
+    via: ``,
+    project: `
+      <a href="/project/litest">Litest</a>
+    `,
+    link: `
+    `
+  },
+  dadan: {
+    name: '駄々ん',
+    role: '',
+    via: '',
+    project: `
+      <a href="/project/monot">Monot for Desktop</a>
+    `,
+    link: `
+    `
+  },
+  usb3_14: {
+    name: 'USB3.14',
+    role: '',
+    via: '',
+    project: `
+      <a href="/project/monot">Monot for Desktop</a>
+    `,
+    link: ``
+  },
+  ao_skyblue: {
+    name: '蒼凰',
+    role: '',
+    via: '',
+    project: `
+      <a href="/project/monot">Monot for Desktop</a>
+    `,
+    link: ``
+  }
+}
+
+const developerElements = [document.getElementsByTagName('developer-element')][0];
+for (let i = 0; i < developerElements.length; i++){
+  const item = developerElements[i];
+  const name = item.attributes["data-developer"].nodeValue;
+  const html = `
+    <div class="member ${name}">
+      <div class="left">
+        <div class="icon" style="background-image: url('/image/icon/${name}.jpg')"></div>
+        <div class="about">
+          <h2>${developer[name].name}</h2>
+          <p>${developer[name].role}</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="member-detail">
+          <p>${developer[name].via}</p>
+          <div class="project">
+            <p>PROJECT</p>
+            ${developer[name].project}
+          </div>
+          <div class="link">
+            <p>LINK</p>
+            ${developer[name].link}
+          </div>
+        </div>
+      </div>
+    </div>
+  `
+  item.innerHTML = html;
+}

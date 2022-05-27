@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
 }
 
+b {
+  font-weight: 500;
+}
 a {
   color: inherit;
   text-decoration: none;

@@ -1,0 +1,150 @@
+body main {
+  padding: 0;
+  width: 100%;
+}
+
+main #top {
+  height: calc(100vh - 50px);
+  background-image: url('/image/top/litest.jpg');
+  background-size: cover;
+}
+#top div {
+  color: #fff;
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#top h2 {
+  font-size: 40px;
+}
+#top p {
+  font-size: 17px;
+  display: inline-block;
+}
+#top a {
+  font-size: 15px;
+}
+#top a::after {
+  background-image: url('/image/go-white.svg');
+}
+h1#catchcopy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  animation-name: catchcopy;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.75, 0, .25, 1);
+  color: #fff;
+  text-shadow: 0 0 5px #ffff;
+}
+
+#reborn {
+  position: relative;
+  padding: 50px calc(50% - 400px);
+  padding-bottom: 50px;
+  height: 2200px;
+  width: 800px;
+  font-size: 23px;
+  text-align: justify;
+}
+#reborn-content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#reborn-background {
+  width: 100%;
+  position: sticky;
+  left: 0;
+  right: .5vw;
+  top: 20vh;
+  aspect-ratio: 200 / 133;
+}
+#reborn-background img {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease-in-out;
+}
+#reborn-img1 {
+  opacity: 1;
+}
+#reborn-img2 {
+  opacity: 0;
+}
+#reborn #reborn-img3 {
+  transition: all 2s ease-in-out;
+  z-index: 9000;
+  opacity: 1;
+  left: -50vw;
+}
+#reborn #reborn-img3.display {
+  left: 50%;
+}
+
+#reborn-space {
+  height: 5000px;
+}
+
+#software {
+  padding: 15px calc(50vw - 500px);
+  width: 1000px;
+  display: flex;
+}
+#software .content-left {
+  width: 50%;
+  padding-right: 5px;
+  text-align: justify;
+}
+#software .content-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 5px;
+  height: inherit;
+}
+.software-images {
+  height: 50%;
+  background-size: cover;
+  background-position: top;
+}
+.software-images#softwaretab {
+  background-image: url('/image/litest/softwaretab.png');
+}
+.software-images#storetab {
+  background-image: url('/image/litest/storetab.png');
+}
+
+#download {
+  width: 700px;
+  margin: 20px calc(50vw - 350px);
+}
+
+#developers {
+  width: 75vw;
+  margin: 20px 12.5vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+@keyframes catchcopy {
+  0% {
+    opacity: 0;
+    font-size: 100px;
+  }
+  100% {
+    opacity: 1;
+    font-size: 50px;
+  }
+}

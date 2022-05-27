@@ -1,9 +1,10 @@
-main #members {
+main#member > #members,
+main#new > #news {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-#members .member,
-#news .news {
+.member,
+.news {
   display: flex;
   position: relative;
   background-color: #f6f6f6;
@@ -13,8 +14,8 @@ main #members {
   margin: 20px;
   transition: all 0.4s ease-in-out;
 }
-#members .member::before,
-#news .news::before {
+.member::before,
+.news::before {
   content: '';
   position: absolute;
   top: 0;
@@ -60,7 +61,7 @@ main #members {
   top: -7px;
 }
 
-#news .news:hover {
+.news:hover {
   box-shadow: 0 0 10px #666;
 }
 
@@ -78,7 +79,7 @@ main #members {
 }
 
 @media (max-width: 850px) {
-  main #members {
+  main {
     display: block;
   }
 }
