@@ -1,0 +1,178 @@
+main * {
+  text-align: justify;
+}
+body main {
+  width: inherit;
+  padding: 0;
+}
+#top {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/image/top/monot.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+#top > div {
+  overflow: hidden;
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#top > div > * {
+  position: relative;
+  animation-name: topAnim;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.75, 0, .25, 1);
+}
+#top h2 {
+  animation-delay: 0s;
+  font-size: 40px;
+}
+#top h2 p {
+  display: inline-block;
+  font-size: 17px;
+}
+#top a {
+  animation-delay: 2s;
+}
+#top h1 {
+  animation-delay: 4s;
+}
+
+main > div:not(#top, #developers) {
+  width: 1000px;
+  margin: 15px calc(50vw - 500px);
+}
+
+#theme p {
+  font-size: 20px;
+}
+#theme::after {
+  content: '';
+  display: block;
+  width: inherit;
+  aspect-ratio: 3 / 1;
+  background-image: url('/image/monot/theme.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#design-images {
+  display: flex;
+  height: 300px;
+}
+#design-images > div {
+  width: 50%;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #fff;
+}
+.design-image {
+  border-radius: 10px;
+  height: 100%;
+}
+#left-design {
+  margin-right: 5px;
+}
+#right-design {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+#left-design > .img1 {
+  height: 100%;
+  background-image: url('/image/monot/window.png');
+}
+#right-design > .img2 {
+  background-image: url('/image/monot/tab.png');
+  background-position: right;
+  background-size: cover;
+  margin-bottom: 2.5px;
+}
+#right-design > .img3 {
+  margin-top: 2.5px;
+  background-image: url('/image/monot/option.jpg');
+  background-size: 50%;
+  background-position: top;
+}
+#addressbar {
+  margin-top: 20px;
+}
+#addressbar-image {
+  background-image: url('/image/monot/addressbar.png');
+  aspect-ratio: 3 / 1;
+}
+
+#contextmenu {
+  padding-top: 20px;
+  font-size: 20px;
+  display: flex;
+}
+#context-image {
+  width: 250px;
+  height: 200px;
+  background-image: url('/image/monot/contextmenu.png');
+}
+
+#forMac {
+  font-size: 18px;
+}
+#forMacImage {
+  height: 200px;
+  border-radius: 5px;
+  border-top-left-radius: 40px;
+  background-image: url('/image/monot/forMac.jpg');
+  background-size: cover;
+  background-position: left top;
+}
+
+#forceDark {
+  display: flex;
+  font-size: 20px;
+  padding-top: 40px;
+}
+#forceDark p {
+  width: 50%;
+}
+#forceDarkImage {
+  width: 50%;
+  aspect-ratio: 2/1;
+  background-image: url('/image/monot/forcedark.png');
+  border-radius: 15px;
+}
+
+#history-bookmark {
+  font-size: 20px;
+  display: flex;
+  height: 300px;
+}
+#history-bookmark #text {
+  width: 100%;
+}
+#history-image {
+  width: 190px;
+  padding: 5px;
+  margin-right: 100px;
+  border-radius: 5px;
+  height: inherit;
+  background-image: url('/image/monot/history.png');
+}
+
+#developers {
+  width: 70vw;
+  margin: 30px 15vw;
+}
+
+@keyframes topAnim {
+  0% {
+    left: 100%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}

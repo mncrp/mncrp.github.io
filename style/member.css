@@ -1,5 +1,4 @@
-main#member > #members,
-main#new > #news {
+main#member > #members {
   display: grid;
   grid-template-columns: 50% 50%;
 }
