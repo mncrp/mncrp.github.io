@@ -77,3 +77,9 @@ main#member > #members {
 .plus_one .icon {
   background-image: url('/image/icon/plus_one.jpg');
 }
+
+@media (max-width: 800px) {
+  main#member > #members {
+    display: block;
+  }
+}

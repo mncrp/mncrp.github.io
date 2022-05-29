@@ -98,12 +98,13 @@ const developer = {
   zip: {
     name: 'ZIP',
     role: '',
-    via: '',
+    via: 'Monot for Androidを作ってます、圧縮形式です。',
     project: `
       <a href="/project/monot/android">Monot for Android</a>
     `,
     link: `
-      <a href="#">Link</a>
+      <a href="https://twitter.com/ZIP_Muryobochi">Twitter</a>
+      <a href="https://1234yosuke.github.io/">サイト</a>
     `
   },
   comamoca: {
