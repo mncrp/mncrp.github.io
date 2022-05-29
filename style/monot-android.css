@@ -1,0 +1,97 @@
+body main {
+  width: inherit;
+  padding: 0;
+}
+
+#top {
+  width: 100%;
+  display: flex;
+  height: 500px;
+  background: linear-gradient(120deg, #fff, #ccc 60%, #999);
+  background-attachment: fixed;
+}
+#top div {
+  position: relative;
+  width: 50%;
+}
+#top-image {
+  background-image: url('/image/monot/android/top.png');
+  background-size: contain;
+  background-position: right;
+}
+#right-content-wrapper {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#right-content-wrapper h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+#right-content-wrapper h2 p {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+#design {
+  width: 1000px;
+  margin: 15px calc(50vw - 500px);
+  font-size: 20px;
+  overflow: hidden;
+}
+#design-image {
+  height: 230px;
+  position: relative;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 50%;
+  background-size: cover;
+  background-position: center top;
+  border-radius: 33px;
+  background-image: url('/image/monot/android/design.png');
+  box-shadow: 0 0 15px #bbb;
+}
+
+#in-alpha {
+  width: 500px;
+  margin: 15px calc(50vw - 250px);
+}
+
+#developers {
+  width: 70vw;
+  margin: 30px 15vw;
+}
+
+@media (max-width: 1200px) {
+  #design {
+    width: 80vw;
+    margin: 15px 10vw;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    overflow-x: hidden;
+  }
+  #developers {
+    width: calc(100vw - 20px);
+    margin: 15px 10px;
+  }
+  #design,
+  #in-alpha {
+    width: calc(100vw - 40px);
+    margin: 15px 20px;
+  }
+  #design-image {
+    box-shadow: none;
+    border: 2px solid #888;
+    border-radius: 20px;
+    background-size: contain;
+  }
+  #right-content-wrapper {
+    width: inherit;
+  }
+}

@@ -51,6 +51,7 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  color: #000;
 }
 
 .elemental {
@@ -63,4 +64,14 @@
   transform: translateX(-50%);
   text-align: right;
   text-shadow: 0 0 15px #efefef;
+  color: #000;
+}
+
+@media (max-width: 750px) {
+  .elemental .text {
+    text-align: left;
+    left: 20px;
+    right: 0;
+    transform: none;
+  }
 }

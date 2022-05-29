@@ -35,7 +35,8 @@ main#member > #members {
 }
 .left .icon {
   height: 175px;
-  background-size: cover;
+  background-size: cover!important;
+  background-position: center!important;
 }
 .left .about {
   padding: 5px 15px;
@@ -75,10 +76,4 @@ main#member > #members {
 }
 .plus_one .icon {
   background-image: url('/image/icon/plus_one.jpg');
-}
-
-@media (max-width: 850px) {
-  main {
-    display: block;
-  }
 }

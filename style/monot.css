@@ -25,6 +25,7 @@ body main {
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(.75, 0, .25, 1);
+  color: #000;
 }
 #top h2 {
   animation-delay: 0s;
@@ -152,7 +153,7 @@ main > div:not(#top, #developers) {
   width: 100%;
 }
 #history-image {
-  width: 190px;
+  aspect-ratio: 1.2 / 1;
   padding: 5px;
   margin-right: 100px;
   border-radius: 5px;
@@ -174,5 +175,44 @@ main > div:not(#top, #developers) {
   100% {
     left: 0;
     opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  main > div:not(#top, #developers) {
+    width: 80vw;
+    margin: 20px 10vw;
+  }
+  #forMacImage {
+    border-top-left-radius: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  main > div:not(#top, #developers) {
+    width: calc(100vw - 40px);
+    margin: 20px 20px;
+  }
+  #history-image {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #context-image {
+    width: 400px;
+  }
+  #forceDark,
+  #history-bookmark {
+    display: block;
+    overflow: hidden;
+  }
+  #forceDark :is(*, p),
+  #history-bookmark div {
+    width: 100%;
+  }
+  #developers {
+    width: calc(100vw - 20px);
+    margin: 20px 10px;
   }
 }

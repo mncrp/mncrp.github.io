@@ -128,7 +128,7 @@ h1#catchcopy {
 
 #download {
   width: 700px;
-  margin: 20px calc(50vw - 350px);
+  padding: 20px calc(50vw - 350px);
 }
 
 #developers {
@@ -144,5 +144,36 @@ h1#catchcopy {
   100% {
     opacity: 1;
     font-size: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+  }
+  #reborn,
+  #software,
+  #download {
+    width: 80vw;
+    padding: 15px 10vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #software {
+    display: block;
+  }
+  #software .content-left {
+    width: 100%;
+    padding: 0;
+  }
+  #software .content-right {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+  }
+  #developers {
+    width: calc(100vw - 20px);
+    margin: 20px 10px;
   }
 }
