@@ -70,7 +70,7 @@ const developer = {
   sorakime: {
     name: 'Sorakime',
     role: 'Representative',
-    via: '代表やっとりまっせ',
+    bio: '代表やっとりまっせ',
     project: `
       <a href="/project/litest">Litest</a>
       <a href="/project/monot">Monot for Desktop</a>
@@ -85,7 +85,7 @@ const developer = {
   waryu_ynd: {
     name: 'waryu_YND',
     role: 'CTO',
-    via: 'monochrome Project.のお手伝いをしています。<br>後、CTOです。',
+    bio: 'monochrome Project.のお手伝いをしています。<br>後、CTOです。',
     project: `
       <a href="/project/litest">Litest</a>
       <a href="/project/monot">Monot for Desktop</a>
@@ -98,7 +98,7 @@ const developer = {
   zip: {
     name: 'ZIP',
     role: '',
-    via: 'Monot for Androidを作ってます、圧縮形式です。',
+    bio: 'Monot for Androidを作ってます、圧縮形式です。',
     project: `
       <a href="/project/monot/android">Monot for Android</a>
     `,
@@ -110,7 +110,7 @@ const developer = {
   comamoca: {
     name: 'こまもか',
     role: '',
-    via: 'Vim',
+    bio: 'Vim',
     project: `
       <a href="/project/litest">Litest</a>
       <a href="/project/monot">Monot for Desktop</a>
@@ -123,7 +123,7 @@ const developer = {
   hidemal: {
     name: 'ひでまる',
     role: '',
-    via: 'Vimはいいぞ',
+    bio: 'Vimはいいぞ',
     project: `
       <a href="/project/litest">Litest</a>
       <a href="/project/monot">Monot for Desktop</a>
@@ -136,7 +136,7 @@ const developer = {
   yukkuri_rmys: {
     name: 'Yukkuri_RMYS',
     role: '',
-    via: ``,
+    bio: ``,
     project: `
       <a href="/project/litest">Litest</a>
     `,
@@ -146,7 +146,7 @@ const developer = {
   dadan: {
     name: '駄々ん',
     role: '',
-    via: '',
+    bio: '',
     project: `
       <a href="/project/monot">Monot for Desktop</a>
     `,
@@ -156,7 +156,7 @@ const developer = {
   usb3_14: {
     name: 'USB3.14',
     role: '',
-    via: '',
+    bio: '',
     project: `
       <a href="/project/monot">Monot for Desktop</a>
     `,
@@ -165,7 +165,7 @@ const developer = {
   ao_skyblue: {
     name: '蒼凰',
     role: '',
-    via: '',
+    bio: '',
     project: `
       <a href="/project/monot">Monot for Desktop</a>
     `,
@@ -188,7 +188,7 @@ for (let i = 0; i < developerElements.length; i++){
       </div>
       <div class="right">
         <div class="member-detail">
-          <p>${developer[name].via}</p>
+          <p>${developer[name].bio}</p>
           <div class="project">
             <p>PROJECT</p>
             ${developer[name].project}
