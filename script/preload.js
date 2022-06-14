@@ -170,6 +170,18 @@ const developer = {
       <a href="/project/monot">Monot for Desktop</a>
     `,
     link: ``
+  },
+  flatponch: {
+    name: 'FlatPonch',
+    role: '',
+    bio: 'Monot for Desktopの一人です',
+    project: `
+      <a href="/project/monot">Monot for Desktop</a>
+    `,
+    link: `
+      <a href="https://flatponch.github.io/">Website</a>
+      <a href="https://linktr.ee/FrutPonch">Social Media</a>
+    `
   }
 }
 

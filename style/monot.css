@@ -140,7 +140,7 @@ main > div:not(#top, #developers) {
 #forceDarkImage {
   width: 50%;
   aspect-ratio: 2/1;
-  background-image: url('/image/monot/forcedark.png');
+  background-image: url('/image/monot/forceDark.png');
   border-radius: 15px;
 }
 
