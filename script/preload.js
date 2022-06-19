@@ -136,11 +136,12 @@ const developer = {
   yukkuri_rmys: {
     name: 'Yukkuri_RMYS',
     role: '',
-    bio: ``,
+    bio: `Litestのデザインなどを提案している人。`,
     project: `
       <a href="/project/litest">Litest</a>
     `,
     link: `
+      <a href="https://twitter.com/YukurriR">Twitter</a>
     `
   },
   dadan: {
