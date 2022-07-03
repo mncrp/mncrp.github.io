@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500&family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500&family=Nunito:wght@300&family=Source+Code+Pro:wght@400&display=swap');
 
 * {
   font-family: 'Noto Sans JP', sans-serif;
@@ -11,12 +11,19 @@
   scroll-behavior: smooth;
 }
 
+code {
+  font-family: 'Source Code Pro', monospace;
+}
 b {
   font-weight: 500;
 }
 a {
   color: inherit;
   text-decoration: none;
+}
+hr {
+  border: 0;
+  border-bottom: 1px solid #888;
 }
 a:not(header > *)::after {
   content: '';
@@ -63,15 +70,15 @@ header > #pageTitle {
 }
 #header-title {
   height: 25px;
-  width: auto;
+  width: 250px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
 }
 #header-title * {
   position: relative;
-  top: -5px;
 }
 #header-title > #logo {
   height: 100%;
@@ -80,7 +87,8 @@ header > #pageTitle {
   margin-right: 5px;
 }
 #header-title > h1 {
-  top: -10px;
+  top: -5px;
+  margin-left: 5px
 }
 #menu-button {
   margin: 5px;

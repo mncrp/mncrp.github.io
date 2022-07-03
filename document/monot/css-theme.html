@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSSによるテーマ - Monot ドキュメント - monochrome Project.</title>
+    <link rel="shortcut icon" href="/image/favicon.ico">
+    <script>
+      let pageTitle = 'Monot Docs';
+    </script>
+  </head>
+  <body>
+    <main>
+      <h5>Monot ドキュメント</h5>
+      <h1>CSSによるテーマ</h1>
+      <p>MonotのテーマはCSSにより実装されています。CSSファイルの中で使えるID名やカスタムプロパティ名などを解説していきます。</p>
+      <hr>
+
+      <h2>テーマが適用される場所</h2>
+      <p>Monotのテーマは、MonotのUI全体および新しいタブを生成した時に表示されるHomeページに適用されます。</p>
+      <p>以下の画像で緑色になっているところに適用されます。Webページに関しては、サーバーが見つからなかった際に表示されるページおよびHomeページのみ表示されます。</p>
+      <img src="/image/monot/docs/css-theme-area.png" alt="CSSによるテーマが適用される範囲">
+      <hr>
+
+      <h2>標準のカスタムプロパティ</h2>
+      <p>Monotで使用できるカスタムプロパティは合計15個。</p>
+      <p>これらは:rootに設定されています。</p>
+      <p><code>--main-background</code>：主な背景色</p>
+      <p><code>--text-color</code>：主なテキスト色</p>
+      <p><code>--browsername-color</code>：Homeページの"Monot by monochrome."表記の文字色</p>
+      <p><code>--shadow-color</code>：各色の影の色</p>
+      <p><code>--shadow-color-unhover</code>：マウスカーソルが乗っていないときの影の色</p>
+      <p><code>--border-color</code>：borderの色</p>
+      <p><code>--border-color-unhover</code>：マウスカーソルが乗っていないときのborderの色</p>
+      <p><code>--backgroundcolor</code>：ボタンなど背景色</p>
+      <p><code>--backgroundcolor-unhover</code>：マウスカーソルが乗っていないときのボタンなどの背景色</p>
+      <p><code>--input-color-unhover</code>：マウスカーソルが乗っていないときのinputの背景色</p>
+      <p><code>--borderline-color</code>：アドレスバーとWebページとの境目の色</p>
+      <p><code>--opened-tab-backgroundcolor</code>：アドレスバーでの開いているタブの背景色</p>
+      <p><code>--closebutton-color</code>：タブを閉じるボタンの色</p>
+      <p><code>--loading-color</code>：読み込み進捗バーの色</p>
+      <hr>
+
+      <h2>各要素のidおよびclass</h2>
+      <h3>アドレスバー・ナビゲーションバー</h3>
+      <p><code>.mac</code>：macOSである</p>
+      <p><code>.window</code>：Thin UIの時に右側に寄せるボタン</p>
+      <p><code>#home</code>：ホームボタン</p>
+      <p><code>#reload</code>：再読み込みボタン</p>
+      <p><code>#prev</code>：戻るボタン</p>
+      <p><code>#next</code>：進むボタン</p>
+      <p><code>#textbox</code>：検索ワードおよびURL入力ボックス</p>
+      <p><code>#move</code>：移動ボタン</p>
+      <p><code>#menu</code>：メニュー表示ボタン</p>
+      <p><code>#minimize</code>：最小化ボタン</p>
+      <p><code>#maximize</code>：最大化ボタン</p>
+      <p><code>#close</code>：ウィンドウを閉じるボタン</p>
+      <p><code>#newtab</code>：新しいタブを開くボタン</p>
+      <br>
+      <h3>Home</h3>
+      <p><code>#search</code>：検索ボックス</p>
+      <p><code>#searchButton</code>：検索ボタン</p>
+      <p><code>#bookmarks</code>：ブックマーク</p>
+      <p><code>#bookmarks-content</code>：ブックマークを表示するところ</p>
+    </main>
+    <script src="/script/preload.js"></script>
+    <script src="/script/docs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>設定項目 - Monot ドキュメント - monochrome Project.</title>
+    <link rel="shortcut icon" href="/image/favicon.ico">
+    <script>
+      let pageTitle = 'Monot Docs';
+    </script>
+  </head>
+  <body>
+    <main>
+      <h5>Monot ドキュメント</h5>
+      <h1>設定項目</h1>
+      <hr>
+
+      <h2>UI</h2>
+      <p>Monotには、DefaultおよびThinの2つのUIが内蔵されています。</p>
+      <img src="/image/monot/docs/default.png" alt="Default UI">
+      <img src="/image/monot/docs/thin.png" alt="Thin UI">
+      <p>これらのUIは、設定ウィンドウから変更でき、即時に変更が適用されます。</p>
+      <img src="/image/monot/docs/setting-window.png" alt="設定ウィンドウ">
+      <p>この機能のソースコードは、</p>
+      <p>
+        <a href="https://github.com/mncrp/monot/blob/develop/src/main/tab.js">
+          https://github.com/mncrp/monot/blob/develop/src/main/tab.js：17〜54, 377〜392行目
+        </a>
+      </p>
+      <p>などから閲覧できます。</p>
+      <hr>
+
+      <i>CSSによるテーマ機能につきましては、<a href="./css-theme">こちら</a>で解説しています</i>
+
+      <h2>検索エンジン</h2>
+      <p>
+        <ul>
+          <li><a href="https://duckduckgo.com">DuckDuckGo</a></li>
+          <li><a href="https://www.google.com">Google</a></li>
+          <li><a href="https://www.yahoo.co.jp">Yahoo! Japan</a></li>
+          <li><a href="https://www.bing.com">Bing</a></li>
+          <li><a href="https://www.yahoo.com">Yahoo!</a></li>
+        </ul>
+      </p>
+      <p>の中から一つお好みの検索エンジンを選ぶことができます。</p>
+      <p>プライバシーや使いやすさなどの観点から、MonotはDuckDuckGoを標準の検索エンジンとしています。</p>
+      <p>この機能のソースコードは、</p>
+      <p>
+        <a href="https://github.com/mncrp/monot/blob/develop/src/main/main.js">
+          https://github.com/mncrp/monot/blob/develop/src/main/main.js：234〜243, 414〜434行目
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/mncrp/monot/blob/main/src/main/tab.js">
+          https://github.com/mncrp/monot/blob/main/src/main/tab.js：12, 115〜124行目
+        </a>
+      </p>
+      <p>などから閲覧できます。</p>
+      <hr>
+
+      <h2>実験的な機能</h2>
+      <i>注意：これらの機能は実験的ですから、有効にしてウェブサイトの表示が崩れた、色がおかしくなった、などのことが起きてもmonochrome Project.は一切責任を負いません。</i>
+      <br><br>
+      <h3>強制ダークモード (Force Dark)</h3>
+      <p>Webページの背景を強制的に暗くし、文字を強制的に白、リンクに限っては青に変更する機能です。有効にすると以下のようにウェブサイト全体の雰囲気が暗くなります。</p>
+      <img src="/image/monot/docs/forceDark.png" alt="forceDark">
+      <h4>仕組み</h4>
+      <p>仕組みは至って簡単です。bodyおよびmain要素の背景を#444にし、p、h1、h2、h3、h4、h5、h6の文字色を#fff、aを#7aa7cdに強制的に変更するだけです。</p>
+      <p>この機能のソースコードは、</p>
+      <p>
+        <a href="https://github.com/mncrp/monot/blob/main/src/proprietary/style/forcedark.css">
+          https://github.com/mncrp/monot/blob/main/src/proprietary/style/forcedark.css
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/mncrp/monot/blob/main/src/main/tab.js">
+          https://github.com/mncrp/monot/blob/main/src/main/tab.js：142〜148行目
+        </a>
+      </p>
+      <p>から閲覧できます。</p>
+      <br>
+      <h3>フォント変更(Font Change)</h3>
+      <p>Webページのフォントを変更します。例えば以下の画像のように、文字を全てヒラギノ明朝 ProNにすることが可能です。</p>
+      <img src="/image/monot/docs/fontChange.png" alt="fontChange">
+      <h4>仕組み</h4>
+      <p>こちらの仕組みも至って簡単です。そのページのフォントを全てCSSセレクタの*を使い上書きしているだけです。</p>
+      <p>この機能のソースコードは</p>
+      <p>
+        <a href="https://github.com/mncrp/monot/blob/develop/src/main/tab.js">
+          https://github.com/mncrp/monot/blob/develop/src/main/tab.js：234〜241行目
+        </a>
+      </p>
+      <p>などから閲覧できます。</p>
+    </main>
+    <script src="/script/preload.js"></script>
+    <script src="/script/docs.js"></script>
+  </body>
+</html>
