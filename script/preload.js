@@ -187,6 +187,17 @@ const developer = {
       <a href="https://flatponch.github.io/">Website</a>
       <a href="https://linktr.ee/FrutPonch">Social Media</a>
     `
+  },
+  mf7cli: {
+    name: 'mf7cli',
+    role: '',
+    bio: '複数のブラウザを開発してる人',
+    project: `
+      <a href="/project/monot">Monot for Desktop</a>
+    `,
+    link: `
+      <a href="https://twitter.com/made_in_apple_">Twitter</a>
+    `
   }
 }
 
