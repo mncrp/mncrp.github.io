@@ -77,6 +77,9 @@ header > #pageTitle {
   transform: translate(-50%, -50%);
   display: flex;
 }
+#header-title > h1 > svg {
+  fill: #000;
+}
 #header-title * {
   position: relative;
 }
@@ -193,5 +196,7 @@ a.content::after {
   a:not(header > *)::after {
     background-image: url('/image/go-white.svg');
   }
-
+  #header-title > h1 > svg {
+    fill: #fff;
+  }
 }
