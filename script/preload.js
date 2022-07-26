@@ -198,6 +198,19 @@ const developer = {
     link: `
       <a href="https://twitter.com/made_in_apple_">Twitter</a>
     `
+  },
+  cupmen: {
+    name: 'カップ麺',
+    role: '',
+    bio: 'Monot Desktopを作ったりしてます。<br>カップ麺です。',
+    project: `
+      <a href="/project/monot">Monot for Desktop</a>
+    `,
+    link: `
+      <a href="https://twitter.com/cupmen4800">Twitter</a>
+      <a href="https://www.youtube.com/channel/UCZX3bYOf9QoMix48D5bZYWQ">Youtube</a>
+      <a href="https://leeks.dev/">ブログ</a>
+    `
   }
 }
 
