@@ -40,6 +40,7 @@ a:not(header > *)::after {
 
 body {
   background-color: #efefef;
+  overflow-x: hidden;
 }
 
 header {
@@ -91,7 +92,8 @@ header > #pageTitle {
 }
 #header-title > h1 {
   top: -5px;
-  margin-left: 5px
+  margin-left: 5px;
+  width: 100%;
 }
 #menu-button {
   margin: 5px;
@@ -169,6 +171,9 @@ a.content::after {
 @media (max-width: 550px) {
   header h1 {
     display: none;
+  }
+  #header-title {
+    width: auto;
   }
 }
 
