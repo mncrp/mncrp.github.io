@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSSによるテーマ - Monot ドキュメント - monochrome Project.</title>
+    <link rel="shortcut icon" href="/image/favicon.ico">
+    <script>
+      let pageTitle = 'Monot Docs';
+    </script>
+  </head>
+  <body>
+    <main>
+      <h5>Monot ドキュメント</h5>
+      <h1>開発環境の準備</h1>
+
+      <hr>
+      <h2>Node.jsのインストール</h2>
+      <h3>Windows</h3>
+      <a href="https://nodejs.org/ja/download/">こちらのサイト</a>からインストーラーをダウンロード、実行します。
+
+      <h3>Mac</h3>
+      <p>上記のリンクからMac向けのバイナリをダウンロード、実行します。</p>
+
+      <h3>Linux</h3>
+      <p>ディストリビューションごとにインストール方法が違います。</p>
+      <p>
+        Ubuntu:
+        <code><pre>sudo apt update && sudo apt install nodejs npm</pre></code>
+      </p>
+
+      <p>
+        Arch Linux:
+        <code><pre>sudo pacman -Sy nodejs</pre></code>
+      </p>
+
+      <p>
+        openSUSE:
+        <code><pre>zypper install nodejs</pre></code>
+      </p>
+
+      <p>インストールされたか確認するにはコマンドプロンプトやShellで<code><pre>node --version</pre></code>を実行します。</p>
+
+      <hr>
+
+      <hr>
+      <h2>Gitのインストール</h2>
+      <p>Monotはソースコードの管理にGit、ホスティングにはGitHubを利用しています。</p>
+
+      <h3>Windows</h3>
+      <a href="http://git-scm.com/download/win">こちら</a>のサイトからお使いのPCに合ったインストーラーをダウンロード、インストールして下さい。
+
+      <h3>Mac</h3>
+      <p>MacOSの場合、既にGitがインストールされている場合があります。<code><pre>%git --version</pre></code>をShellで実行して、Gitがインストール済みか確認して下さい。</p>
+
+      <p>もしGitがインストールされていない場合は<a href="https://git-scm.com/download/mac">こちら</a>のサイトからインストーラーをダウンロード(1)、実行して下さい。</p>
+
+      <h3>Linux</h3>
+      <p>各ディストリビューションのパッケージマネージャを使ってGitをインストールして下さい。</p>
+      <p>Ubuntu:
+        <code><pre>$sudo apt update && sudo apt install git</pre></code>
+      </p>
+
+      <p>Arch Linux:
+        <code><pre>$sudo pacman -Sy git</pre></code>
+      </p>
+
+      <p>openSUSE:
+        <code><pre>$zypper install git-core</pre></code>
+      </p>
+
+      <h6>(1): インストーラーの代わりにHomebrewを使用してもインストールする事が出来ます。Homebrewがインストール済みの場合は、 <code>brew update</code> 、<code>brew install git</code>を実行して下さい。Homebrewは<code><pre>/bin/bash -c "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre></code>でインストール出来ます。</h6>
+
+      <hr>
+      <h2>ソースコードの入手</h2>
+
+      <p>任意のディレクトリで<code><pre>git clone https://github.com/Sorakime/monot.git</pre></code>を実行すると<code><pre>./monot</pre></code>ディレクトリが作成され、Monotのソースコードがダウンロードされます。(2)</p>
+
+      <h6>(2): 厳密には、Monotのリポジトリをローカル環境に複製したことになりますが、ここでは一旦ソースコードのダウンロードとします。</h6>
+
+      <p>以降このドキュメントではカレントディレクトリを<code><pre>/monot</pre></code>ディレクトリとします。</p>
+
+      <h3>依存関係のインストール</h3>
+      <p>Monotのディレクトリに移動して、<code><pre>npm run install</pre></code>を実行すると依存関係が整理されます。</p>
+
+      <hr>
+      <h3>ビルドの実行</h3>
+      <code><pre>npm run build</pre></code>を実行すると<code><pre>electron-builder</pre></code>が実行され、<code><pre>./dist</pre></code>配下に各OSに適した実行可能ファイルが生成されます。(3)
+
+      <h6>(3): Windowsなら<code><pre>.exe</pre></code>ファイル、MacOSなら<code><pre>.app</pre></code>ファイル、Linuxなら<code><pre>.AppImage</pre></code>ファイルが生成されます。</h6>
+
+      <h3>バイナリの実行</h3>
+      <code><pre>./dist</pre></code>配下に生成された実行可能ファイルをそれぞれのOSに合った方法で実行して下さい。
+
+      <hr>
+      <h2>Gitの使い方</h2>
+      <p>Monot開発において主に使うGitコマンドは、以下の5つです。</p>
+      <ul>
+        <li><pre>git add</pre></li>
+        <li><pre>git clone</pre></li>
+        <li><pre>git commit</pre></li>
+        <li><pre>git push</pre></li>
+        <li><pre>git pull</pre></li>
+
+      <h3>用語</h3>
+      <p>このドキュメントでは、以下の用語を用いて解説しています。</p>
+      - リポジトリ
+        - リモートリポジトリ
+        - ローカルリポジトリ
+
+      <hr>
+
+      <h4>リポジトリ</h4>
+      <p>IT用語辞典 e-wordsは、以下のように解説しています。</p>
+      > ソフトウェア開発などに用いるプロジェクト管理システムやバージョン管理システムなどで、プロジェクトを構成するプログラムのソースコードやドキュメント、関連する各種のデータやファイルなどを一元的に管理する格納場所のことをリポジトリという。<br>
+      > 特に、データそのものに加えて版数や最終更新日時などデータについてのデータ（メタデータ）を記録・管理し、複数人がデータを矛盾なく共有する仕組みを備えたデータの管理システムや保管場所のことを指すことが多い。<br>
+      https://e-words.jp/w/%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA.html
+
+      <h5>リモートリポジトリ</h5>
+      <p>この場合、<a href="https://github.com/mncrp/monot">GitHub上のリポジトリ</a>のこと。</p>
+
+      <h5>ローカルリポジトリ</h5>
+      <p>コンピュータ上に複製されたリポジトリのこと。</p>
+
+      <hr>
+
+      <h3><p><code><pre>git add</pre></code></p></h3>
+      <p>gitでは扱うファイルを予め決めておきます。</p>
+      <p>新しいファイルを作成したり、ファイルを削除したり、移動したりした場合に<code><pre>git add .</pre></code>とすることでその扱うファイルを更新できます。</p>
+
+      <h3><p><code><pre>git clone</pre></code></p></h3>
+      <p>ソースコードの入手でも１度使ったように、リモートリポジトリ(ここではGitHub上のリポジトリ)をローカル環境に複製するコマンドです。</p>
+
+      <h3><p><code><pre>git commit</pre></code></p></h3>
+      <p>現在のソースコードを変更履歴に残すコマンドです。</p>
+      <p>後述する<code><pre>git push</pre></code>をする場合、この<code><pre>git commit</pre></code>を行ってから<code><pre>git push</pre></code>しなければなりません。</p>
+
+      <h3><p><code><pre>git push</pre></code></p></h3>
+      <p>ローカルリポジトリの変更点をリモートリポジトリにアップロードするコマンドです。</p>
+      <p>後述する<code><pre>git pull</pre></code>のほぼ反対のコマンドです。</p>
+
+      <h3><p><code><pre>git pull</pre></code></p></h3>
+      <p>リモートリポジトリとローカルリポジトリとの差分を取り込むコマンドです。</p>
+      <p>ほかのメンバーが<code><pre>git push</pre></code>することでGitHubのリモートリポジトリが変更された後、<code><pre>git pull</pre></code>をすることでローカルリポジトリがリモートリポジトリと同期されます。</p>
+    </main>
+    <script src="/script/preload.js"></script>
+    <script src="/script/docs.js"></script>
+  </body>
+</html>

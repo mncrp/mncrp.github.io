@@ -3,8 +3,11 @@ const pathname = location.pathname;
 if (pathname.match(/monot/) !== null) {
   document.getElementById('sidebar').innerHTML += `
     <hr>
-    <a href="/document/monot/setting">設定項目</a>
-    <a href="/document/monot/css-theme">CSSによるテーマ</a>
+    <a href="/docs/monot/setting">設定項目</a>
+    <a href="/docs/monot/css-theme">CSSによるテーマ</a>
+    <a href="/docs/monot/setup">開発環境の構築</a>
+    <a href="/docs/monot/directory">ディレクトリ構造</a>
+    <a href="/docs/monot/branch">ブランチルール</a>
   `;
 }
 
@@ -22,4 +25,4 @@ document.head.innerHTML += `
       color: #fff;
     }
   </style>
-`
+`;

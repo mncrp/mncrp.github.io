@@ -82,7 +82,7 @@ const developer = {
     `,
     link: `
       <a href="https://youtube.com/Sorakime">YouTube</a>
-      <a href="https://soraki.me">僕のポートフォリオ的な</a>
+      <a href="https://www.soraki.me">ポートフォリオ</a>
       <a href="https://twitter.com/Sorakime_">Twitter</a>
     `
   },
@@ -146,16 +146,6 @@ const developer = {
     `,
     link: `
       <a href="https://twitter.com/YukurriR">Twitter</a>
-    `
-  },
-  dadan: {
-    name: '駄々ん',
-    role: '',
-    bio: '',
-    project: `
-      <a href="/project/monot">Monot for Desktop</a>
-    `,
-    link: `
     `
   },
   usb3_14: {
