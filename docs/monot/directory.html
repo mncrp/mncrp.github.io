@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ディレクトリ構造 - Monot ドキュメント - monochrome Project.</title>
+    <link rel="shortcut icon" href="/image/favicon.ico">
+    <script>
+      let pageTitle = 'Monot Docs';
+    </script>
+  </head>
+  <body>
+    <main>
+      <h5>Monot ドキュメント</h5>
+      <h1>ディレクトリ構造</h1>
+
+      <hr>
+      <p>最新のMonotでは、</p>
+      <ul>
+        <li>メインプロセス</li>
+        <li>レンダラプロセス(ナビゲーション及びメニュー)</li>
+        <li>Monotの内部ページ</li>
+        <li>preload</li>
+      </ul>
+      <p>で分けるということを意識しています。</p>
+
+      <hr>
+      <ul>
+        <li>/
+          <ul>
+            <li>.eslintrc.json
+              <p>ESLintの設定が書かれています</p>
+            </li>
+            <li>.gitgnore
+              <p>Gitで除外するファイルが記述されています</p>
+            </li>
+            <li>package.json , package-lock.json
+              <p>プロジェクトに関する情報が記載されています。</p>
+
+            <li>README.md
+              <p>GitHubで公開するとき、Monotの説明等を細かく書いたマークダウン形式のドキュメント。</p>
+            </li>
+            <li>src/
+              <p>Monotのソフトウェア本体のソースコードが配置されています。</p>
+              <ul>
+                <li>main/
+                  <p>メインプロセスのソースコードが配置されています。</p>
+                </li>
+                <li>renderer/
+                  <p>レンダラプロセスのソースコードが配置されています。</p>
+                  <ul>
+                    <li>navigation/
+                      <p>ナビゲーションバーのファイルが配置されています。</p>
+                    </li>
+                    <li>suggest/
+                      <p>サジェストのファイルが配置されています。</p>
+                    </li>
+                    <li>bookmark/
+                      <p>ブックマークウィンドウのファイルが配置されています。</p>
+                    </li>
+                    <li>history/
+                      <p>履歴ウィンドウのファイルが配置されています。</p>
+                    </li>
+                    <li>menu/
+                      <p>オーバーフローメニューのファイルが配置されています。</p>
+                    </li>
+                    <li>setting/
+                      <p>設定ウィンドウのファイルが配置されています。</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>browser/
+                  <p>Monotの内部ページが配置されています。</p>
+                </li>
+                <li>default/
+                  <p>Monotのデフォルトの履歴ファイルや設定ファイルが配置されています。</p>
+                </li>
+                <li>image/
+                  <p>Monotで使われる画像ファイルが配置されています。</p>
+                </li>
+                <li>preload/
+                  <p>preloadスクリプトが配置されています。</p>
+                </li>
+                <li>proprietary/
+                  <p>Monot独自のスタイルシートやスクリプトが配置されています。</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    </main>
+    <script src="/script/preload.js"></script>
+    <script src="/script/docs.js"></script>
+  </body>
+</html>
