@@ -25,20 +25,20 @@
       <p>ディストリビューションごとにインストール方法が違います。</p>
       <p>
         Ubuntu:
-        <code><pre>sudo apt update && sudo apt install nodejs npm</pre></code>
+        <code>sudo apt update && sudo apt install nodejs npm</code>
       </p>
 
       <p>
         Arch Linux:
-        <code><pre>sudo pacman -Sy nodejs</pre></code>
+        <code>sudo pacman -Sy nodejs</code>
       </p>
 
       <p>
         openSUSE:
-        <code><pre>zypper install nodejs</pre></code>
+        <code>zypper install nodejs</code>
       </p>
 
-      <p>インストールされたか確認するにはコマンドプロンプトやShellで<code><pre>node --version</pre></code>を実行します。</p>
+      <p>インストールされたか確認するにはコマンドプロンプトやShellで<code>node --version</code>を実行します。</p>
 
       <hr>
 
@@ -50,56 +50,56 @@
       <a href="http://git-scm.com/download/win">こちら</a>のサイトからお使いのPCに合ったインストーラーをダウンロード、インストールして下さい。
 
       <h3>Mac</h3>
-      <p>MacOSの場合、既にGitがインストールされている場合があります。<code><pre>%git --version</pre></code>をShellで実行して、Gitがインストール済みか確認して下さい。</p>
+      <p>MacOSの場合、既にGitがインストールされている場合があります。<code>%git --version</code>をShellで実行して、Gitがインストール済みか確認して下さい。</p>
 
       <p>もしGitがインストールされていない場合は<a href="https://git-scm.com/download/mac">こちら</a>のサイトからインストーラーをダウンロード(1)、実行して下さい。</p>
 
       <h3>Linux</h3>
       <p>各ディストリビューションのパッケージマネージャを使ってGitをインストールして下さい。</p>
       <p>Ubuntu:
-        <code><pre>$sudo apt update && sudo apt install git</pre></code>
+        <code>$sudo apt update && sudo apt install git</code>
       </p>
 
       <p>Arch Linux:
-        <code><pre>$sudo pacman -Sy git</pre></code>
+        <code>$sudo pacman -Sy git</code>
       </p>
 
       <p>openSUSE:
-        <code><pre>$zypper install git-core</pre></code>
+        <code>$zypper install git-core</code>
       </p>
 
-      <h6>(1): インストーラーの代わりにHomebrewを使用してもインストールする事が出来ます。Homebrewがインストール済みの場合は、 <code>brew update</code> 、<code>brew install git</code>を実行して下さい。Homebrewは<code><pre>/bin/bash -c "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre></code>でインストール出来ます。</h6>
+      <h6>(1): インストーラーの代わりにHomebrewを使用してもインストールする事が出来ます。Homebrewがインストール済みの場合は、 <code>brew update</code> 、<code>brew install git</code>を実行して下さい。Homebrewは<code>/bin/bash -c "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code>でインストール出来ます。</h6>
 
       <hr>
       <h2>ソースコードの入手</h2>
 
-      <p>任意のディレクトリで<code><pre>git clone https://github.com/Sorakime/monot.git</pre></code>を実行すると<code><pre>./monot</pre></code>ディレクトリが作成され、Monotのソースコードがダウンロードされます。(2)</p>
+      <p>任意のディレクトリで<code>git clone https://github.com/Sorakime/monot.git</code>を実行すると<code>./monot</code>ディレクトリが作成され、Monotのソースコードがダウンロードされます。(2)</p>
 
       <h6>(2): 厳密には、Monotのリポジトリをローカル環境に複製したことになりますが、ここでは一旦ソースコードのダウンロードとします。</h6>
 
-      <p>以降このドキュメントではカレントディレクトリを<code><pre>/monot</pre></code>ディレクトリとします。</p>
+      <p>以降このドキュメントではカレントディレクトリを<code>/monot</code>ディレクトリとします。</p>
 
       <h3>依存関係のインストール</h3>
-      <p>Monotのディレクトリに移動して、<code><pre>npm run install</pre></code>を実行すると依存関係が整理されます。</p>
+      <p>Monotのディレクトリに移動して、<code>npm run install</code>を実行すると依存関係が整理されます。</p>
 
       <hr>
       <h3>ビルドの実行</h3>
-      <code><pre>npm run build</pre></code>を実行すると<code><pre>electron-builder</pre></code>が実行され、<code><pre>./dist</pre></code>配下に各OSに適した実行可能ファイルが生成されます。(3)
+      <code>npm run build</code>を実行すると<code>electron-builder</code>が実行され、<code>./dist</code>配下に各OSに適した実行可能ファイルが生成されます。(3)
 
-      <h6>(3): Windowsなら<code><pre>.exe</pre></code>ファイル、MacOSなら<code><pre>.app</pre></code>ファイル、Linuxなら<code><pre>.AppImage</pre></code>ファイルが生成されます。</h6>
+      <h6>(3): Windowsなら<code>.exe</code>ファイル、MacOSなら<code>.app</code>ファイル、Linuxなら<code>.AppImage</code>ファイルが生成されます。</h6>
 
       <h3>バイナリの実行</h3>
-      <code><pre>./dist</pre></code>配下に生成された実行可能ファイルをそれぞれのOSに合った方法で実行して下さい。
+      <code>./dist</code>配下に生成された実行可能ファイルをそれぞれのOSに合った方法で実行して下さい。
 
       <hr>
       <h2>Gitの使い方</h2>
       <p>Monot開発において主に使うGitコマンドは、以下の5つです。</p>
       <ul>
-        <li><pre>git add</pre></li>
-        <li><pre>git clone</pre></li>
-        <li><pre>git commit</pre></li>
-        <li><pre>git push</pre></li>
-        <li><pre>git pull</pre></li>
+        <li>git add</li>
+        <li>git clone</li>
+        <li>git commit</li>
+        <li>git push</li>
+        <li>git pull</li>
 
       <h3>用語</h3>
       <p>このドキュメントでは、以下の用語を用いて解説しています。</p>
@@ -123,24 +123,24 @@
 
       <hr>
 
-      <h3><p><code><pre>git add</pre></code></p></h3>
+      <h3><p><code>git add</code></p></h3>
       <p>gitでは扱うファイルを予め決めておきます。</p>
-      <p>新しいファイルを作成したり、ファイルを削除したり、移動したりした場合に<code><pre>git add .</pre></code>とすることでその扱うファイルを更新できます。</p>
+      <p>新しいファイルを作成したり、ファイルを削除したり、移動したりした場合に<code>git add .</code>とすることでその扱うファイルを更新できます。</p>
 
-      <h3><p><code><pre>git clone</pre></code></p></h3>
+      <h3><p><code>git clone</code></p></h3>
       <p>ソースコードの入手でも１度使ったように、リモートリポジトリ(ここではGitHub上のリポジトリ)をローカル環境に複製するコマンドです。</p>
 
-      <h3><p><code><pre>git commit</pre></code></p></h3>
+      <h3><p><code>git commit</code></p></h3>
       <p>現在のソースコードを変更履歴に残すコマンドです。</p>
-      <p>後述する<code><pre>git push</pre></code>をする場合、この<code><pre>git commit</pre></code>を行ってから<code><pre>git push</pre></code>しなければなりません。</p>
+      <p>後述する<code>git push</code>をする場合、この<code>git commit</code>を行ってから<code>git push</code>しなければなりません。</p>
 
-      <h3><p><code><pre>git push</pre></code></p></h3>
+      <h3><p><code>git push</code></p></h3>
       <p>ローカルリポジトリの変更点をリモートリポジトリにアップロードするコマンドです。</p>
-      <p>後述する<code><pre>git pull</pre></code>のほぼ反対のコマンドです。</p>
+      <p>後述する<code>git pull</code>のほぼ反対のコマンドです。</p>
 
-      <h3><p><code><pre>git pull</pre></code></p></h3>
+      <h3><p><code>git pull</code></p></h3>
       <p>リモートリポジトリとローカルリポジトリとの差分を取り込むコマンドです。</p>
-      <p>ほかのメンバーが<code><pre>git push</pre></code>することでGitHubのリモートリポジトリが変更された後、<code><pre>git pull</pre></code>をすることでローカルリポジトリがリモートリポジトリと同期されます。</p>
+      <p>ほかのメンバーが<code>git push</code>することでGitHubのリモートリポジトリが変更された後、<code>git pull</code>をすることでローカルリポジトリがリモートリポジトリと同期されます。</p>
     </main>
     <script src="/script/preload.js"></script>
     <script src="/script/docs.js"></script>

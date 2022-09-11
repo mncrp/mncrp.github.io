@@ -12,7 +12,18 @@
 }
 
 code {
+  display: block;
+  padding: 10px 15px;
+  margin: 15px 5px;
+  border-radius: 10px;
+}
+code, code * {
   font-family: 'Source Code Pro', monospace;
+}
+code.inline {
+  display: inline-block;
+  margin: 2px;
+  padding: 5px 10px;
 }
 b {
   font-weight: 500;
@@ -28,7 +39,7 @@ hr {
 
 ul ul {
   display: block;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 a:not(header > *)::after {
