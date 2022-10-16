@@ -88,8 +88,8 @@ const developer = {
   },
   waryu_ynd: {
     name: 'waryu_YND',
-    role: 'CTO',
-    bio: 'monochrome Project.のお手伝いをしています。<br>後、CTOです。',
+    role: '',
+    bio: 'monochrome Project.のお手伝いをしています。',
     project: `
       <a href="/project/litest">Litest</a>
       <a href="/project/monot">Monot for Desktop</a>
@@ -137,8 +137,8 @@ const developer = {
       <a href="https://twitter.com/Hidemal_OwO">Twitter</a>
     `
   },
-  yukkuri_rmys: {
-    name: 'Yukkuri_RMYS',
+  ykrmys: {
+    name: 'YkRmys',
     role: '',
     bio: `Litestのデザインなどを提案している人。`,
     project: `
@@ -200,6 +200,18 @@ const developer = {
       <a href="https://twitter.com/cupmen4800">Twitter</a>
       <a href="https://www.youtube.com/channel/UCZX3bYOf9QoMix48D5bZYWQ">Youtube</a>
       <a href="https://leeks.dev/">ブログ</a>
+    `
+  },
+  farland: {
+    name: 'ふぁーらんど',
+    role: '',
+    bio: 'へんなやつ。',
+    project: `
+      <a href="/project/monot/android/">Monot for Android</a>
+    `,
+    link: `
+      <a href="https://twitter.com/farland1717">Twitter</a>
+      <a href="https://farland1717.github.io/">WebSite</a>
     `
   }
 }
