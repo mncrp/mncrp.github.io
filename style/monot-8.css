@@ -214,3 +214,20 @@ body main > * {
     text-shadow: 0 0 5px #222a;
   }
 }
+
+@media (max-width: 800px) {
+  #whats-new,
+  #whats-new * {
+    overflow: hidden;
+    position: relative;
+  }
+  #whats-new h2 {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+  }
+}
