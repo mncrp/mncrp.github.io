@@ -181,7 +181,7 @@ const developer = {
   mf7cli: {
     name: 'mf7cli',
     role: '',
-    bio: '複数のブラウザを開発してる人',
+    bio: '主にMonotのNPMパッケージを更新する人です',
     project: `
       <a href="/project/monot">Monot for Desktop</a>
     `,
