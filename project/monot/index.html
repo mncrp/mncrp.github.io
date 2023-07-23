@@ -2,12 +2,12 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Monot v.1.1.0 - monochrome Project.</title>
+    <title>Monot v.2.0.0 - monochrome Project.</title>
 
-    <meta name="description" content="monochrome.がお送りする、これまでとは全く違うウェブブラウザMonotの最新版を一部見てみよう。10月23日、登場。">
+    <meta name="description" content="monochrome.がお送りする、美しいデザインと軽快な動作を持ち合わせたWebブラウザ、Monot。v.2.0.0、7月16日リリース。">
 
     <link rel="shortcut icon" href="/image/favicon.ico">
-    <link rel="stylesheet" href="/style/monot-8.css">
+    <link rel="stylesheet" href="/style/monot-12.css">
     <link rel="stylesheet" href="/style/member.css">
     <script>
       let pageTitle = 'Monot';
@@ -16,206 +16,106 @@
   <body>
     <main>
       <div id="top">
-        <div id="top-left">
-          <h1>Monot v.1.1.0</h1>
-          <h4>あなたのインターネットに飛び込もう</h4>
-          <h3><a href="#release">ダウンロード</a></h3>
-        </div>
-        <div id="top-right"></div>
-        <a href="#whats-new" id="new-btn">新機能を見る</a>
+        <span id="top-text">
+          <span id="top-text-content">
+            <h1 style="font-size: 10vmin; line-height: .8;">Monot</h1>
+            <h4 style="font-size: 30px;">by monochrome.</h4>
+            <h3 style="font-size: 30px;">v.2.0.0</h3>
+            <h3 style="font-size: 4vmin;">多様なインターネットを見よう。</h3>
+            <h3 style="font-size: 15px; line-height: 3;">
+              <a href="https://github.com/mncrp/monot/">リポジトリ</a>
+              <a href="https://github.com/mncrp/monot/releases/tag/build12">リリース</a>
+              <a href="#download">ダウンロード</a>
+            </h3>
+          </span>
+        </span>
+        <span id="top-image">
+          <img src="https://github.com/mncrp/monot/assets/69241694/f0793a02-66f6-44e1-89cd-fcc5f25634f7" alt="Screenshot">
+        </span>
       </div>
-      <div id="whats-new">
-        <div id="new-grid">
-          <a href="#favicon" id="new-favicon">
-            <h2>ファビコン表示</h2>
-          </a>
-          <a href="#tabFix" id="new-tabFix">
-            <h2>タブ固定</h2>
-          </a>
-          <a href="#tabMove" id="new-tabMove">
-            <h2>タブ移動</h2>
-            <h6>この画像がダークモード時にへんなことになってるのは僕は知らん</h6>
-          </a>
-          <a href="#overflowMenu" id="new-overflowMenu">
-            <h2>改良された<br>オーバーフロー<br>メニュー</h2>
-          </a>
-          <a href="#menus" id="new-menus">
-            <h2>改良されたメニュー</h2>
-          </a>
-          <a href="#thinUI" id="new-thinUI">
-            <h2>新しいThin UI</h2>
-          </a>
-          <a href="#bookmarkHome" id="new-bookmarkHome">
-            <h2>Homeでブックマークを表示</h2>
-          </a>
-          <a href="#wallpaper" id="new-wallpaper">
-            <h2>壁紙</h2>
-          </a>
-          <a href="#suggest" id="new-suggest">
-            <h2>検索候補</h2>
-          </a>
+      <div id="hello">
+        <div class="left">
+          <span>
+            <h1>Hello!</h1>
+            <p>Monotは<wbr>日本語でも、<wbr>英語でも。</p>
+            <p>多言語対応により、<wbr>より多くの方々に<wbr>Monotを<wbr>使用して<wbr>いただけるように<wbr>なりました。</p>
+          </span>
+        </div>
+        <div class="right">
+          <img src="https://user-images.githubusercontent.com/69241694/253604667-972948b1-a0a9-4c4d-b928-4e84ff90ad94.png" alt="Japanese Screenshot">
+          <img src="/image/monot/english.png" alt="English Screenshot" class="scroll-anim">
         </div>
       </div>
-      <div id="news">
-        <div id="favicon">
-          <div>
-            <h4>ファビコン表示</h4>
-            <div>
-              <div class="news-left">
-                <p>Monotにも<b>ファビコンの表示</b>ができるようになりました。タブをパッと確認したい時やタブを固定した時、どのタブだったかを確認するときに便利です。</p>
-              </div>
-              <div class="news-right"></div>
-            </div>
-            <a href="#whats-new">新機能の一覧を見る</a>
-          </div>
+      <div id="new-home">
+        <div class="left">
+          <img src="https://user-images.githubusercontent.com/69241694/197395554-ba0f1127-277c-48ca-b428-595d6535e153.png" alt="Old Home">
+          <img src="https://user-images.githubusercontent.com/69241694/253604397-294b2884-776f-4722-881c-f26e0047f542.png" alt="New Home" class="scroll-anim">
         </div>
-        <div id="tabFix">
-          <div>
-            <h4>タブ固定</h4>
-            <div>
-              <div class="news-left">
-                <p><b>タブを固定</b>できるようになりました。しばらく置いておきたい情報をスリムに置いておく方法です。</p>
-              </div>
-              <div class="news-right"></div>
-            </div>
-            <a href="#whats-new">新機能の一覧を見る</a>
-          </div>
-        </div>
-        <div id="tabMove">
-          <div>
-            <h4>タブ移動</h4>
-            <div>
-              <div class="news-left">
-                <p><b>タブを移動</b>できるようになりました。タブの管理が最も効率的になる賢い方法の一つであり、最も利用されるタブ関連機能の一つです。</p>
-              </div>
-              <div class="news-right"></div>
-            </div>
-            <a href="#whats-new">新機能の一覧を見る</a>
-          </div>
-        </div>
-        <div id="overflowMenu">
-          <div>
-            <h4>改良されたオーバーフローメニュー</h4>
-            <div>
-              <div class="news-left"></div>
-              <div class="news-right">
-                <p><b>オーバーフローメニューの項目をより豊富に</b>して、WindowsおよびLinuxの環境でも各種機能をすぐに使えるように改良しました。macOSにおいてはメニューバーと、このオーバーフローメニューの両方を使用できます。</p>
-              </div>
-            </div>
-            <a href="#whats-new">新機能の一覧を見る</a>
-          </div>
-        </div>
-        <div id="menus">
-          <div>
-            <h4>改良されたメニュー</h4>
-            <div>
-              <div class="news-left"></div>
-              <div class="news-right">
-                <p><b>macOSではメニューバーの項目をよりmacOSに最適化</b>しました。<b>コンテキストメニューはよりシンプルなものにし</b>、全てのプラットフォームで統一しました。</p>
-              </div>
-            </div>
-            <a href="#whats-new">新機能の一覧を見る</a>
-          </div>
-        </div>
-        <div id="thinUI">
-          <div>
-            <h4>新しいThin UI</h4>
-            <div>
-              <div class="news-left">
-                <p>もっと薄いアドレスバーを。もっと広いウェブ体験を。そのために新しく<b>ThinというUI</b>を実装しました。なおこれまでの標準UIもDefaultとして使用することができます。</p>
-              </div>
-              <div class="news-right"></div>
-            </div>
-            <a href="#whats-new">新機能の一覧を見る</a>
-          </div>
-        </div>
-        <div id="bookmarkHome">
-          <div>
-            <h4>Homeでブックマークを表示</h4>
-            <div>
-              <div class="news-left">
-                <p>より便利に、素早く、賢くインターネットを楽しむためには、便利で賢い場所にリンクを配置することが重要です。そこで、最も使用されている<b>Homeにブックマークを表示できるように</b>しました。</p>
-              </div>
-              <div class="news-right"></div>
-            </div>
-            <a href="#whats-new">新機能の一覧を見る</a>
-          </div>
-        </div>
-        <div id="wallpaper">
-          <div>
-            <h4>壁紙</h4>
-            <div>
-              <div class="news-left">
-                <p><b>壁紙を設定</b>できるようになりました。常時アドレスバーに表示されていて、Homeにも表示されます。この機能によって、より個性を表現できるようになり、生活に溶け込むようになりました。</p>
-              </div>
-              <div class="news-right"></div>
-            </div>
-            <a href="#whats-new">新機能の一覧を見る</a>
-          </div>
-        </div>
-        <div id="suggest">
-          <div>
-            <h4>検索候補</h4>
-            <div>
-              <div class="news-left">
-                <p>検索する上で、候補を出すというのは大きな手助けになります。その<b>検索候補を表示する機能</b>、いわゆるサジェスト機能をついにMonotに実装しました。</p>
-              </div>
-              <div class="news-right"></div>
-            </div>
-            <a href="#whats-new">新機能の一覧を見る</a>
-          </div>
+        <div class="right">
+          <span>
+            <h1>新しいHome。</h1>
+            <p>インターネットを<wbr>見ていると、<wbr>つい時間が<wbr>過ぎて<wbr>しまいます。<wbr>でも、<wbr>時計を<wbr>表示したから<wbr>大丈夫。<br>検索ボックスは<wbr>ウィンドウ上部の<wbr>アドレスバーに<wbr>統一し、<wbr>よりスマートな<wbr>デザインに<wbr>変更しました。</p>
+          </span>
         </div>
       </div>
-      <div id="release">
-        <h2>リリース</h2>
-        <p>macOS, Linux, Windows向けに、x64とarm64で分けてリリースしています。</p>
-        <br>
-        <h3>Windows</h3>
-        <ul>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Monot-Build8-Install-x64.exe">x64 インストーラ</a></li>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Monot-Build8-Install-arm64.exe">arm64 インストーラ</a></li>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Monot-Build8-x64.zip">x64 ポータブル</a></li>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Monot-Build8-arm64.zip">arm64 ポータブル</a></li>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Windows-x64.yml">Windows-x64.yml</a></li>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Windows-arm64.yml">Windows-arm64.yml</a></li>
-        </ul>
-        <br>
-        <hr>
-        <br>
-        <h3>macOS</h3>
-        <ul>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Monot-Build8-x64.dmg">x64 ディスクイメージ</a></li>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Monot-Build8-arm64.dmg">arm64 ディスクイメージ</a></li>
-          <i>ディスクイメージからApp本体を抽出可能です。</i>
-          <br>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Mac-x64.yml">Mac-x64.yml</a></li>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Mac-arm64.yml">Mac-arm64.yml</a></li>
-        </ul>
-        <br>
-        <hr>
-        <br>
-        <h3>Linux</h3>
-        <ul>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Monot-Build8-x64.appImage">x64 AppImage</a></li>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Monot-Build8-arm64.AppImage">arm64 AppImage</a></li>
-          <i>AppImage単体で実行が可能ですが、インストールすることも可能です。</i>
-          <br>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Linux-x64.yml">Linux-x64.yml</a></li>
-          <li><a href="https://github.com/mncrp/monot/releases/download/build8/Linux-arm64.yml">Linux-arm64.yml</a></li>
-        </ul>
-        <br>
-        <hr>
-        <br>
-        <h3>その他URL</h3>
-        <ul>
-          <li><a href="https://github.com/mncrp/monot/releases/tag/build8">リリースノート</a></li>
-          <li><a href="https://github.com/mncrp/monot/">リポジトリ</a></li>
-          <li><a href="https://mncrp.github.io/project/monot/">公式サイト</a></li>
-        </ul>
+      <div id="more">
+        <span>
+          <h1 style="font-size: 40px;">Monotは、もっと色々。</h1>
+          <p>これ以外にもMonotにはたくさんの特徴があります。</p>
+        </span>
+        <div id="grid">
+          <p>任意の検索エンジンの追加</p>
+          <p class="right">オーバーフローメニューの改良</p>
+          <p>閉じる、最大化、最小化のネイティブ化</p>
+          <p>細かなデザインの修正</p>
+          <p>バグの修正</p>
+          <p>以前からの機能 <span onclick="show()">もっと見る</span></p>
+        </div>
       </div>
-      <br>
-      <h2 style="text-align: center;">Developers</h2>
+      <div id="showed">
+        <span id="showed-wrapper">
+          <h1>以前からの機能</h1>
+          <p>Monotには以前からの機能もたくさん搭載されています。</p>
+          <ul>
+            <li>CSSによるテーマ</li>
+            <li>壁紙の設定</li>
+            <li>Thin UI</li>
+            <li>いくつかの実験的な機能</li>
+            <li>検索候補</li>
+            <li>履歴</li>
+            <li>ブックマーク</li>
+            <li>タブの固定</li>
+            <li>タブの移動</li>
+            <p>など</p>
+          </ul>
+          <span onclick="show(0)">閉じる</span>
+        </span>
+      </div>
+      <div id="download">
+        <h1>ダウンロード</h1>
+        <p>Monot by monochrome. v.2.0.0 (Build 12)を今すぐ試そう！３大プラットフォームのどれでも使用することができます。</p>
+        <div class="dl-grid">
+          <span>
+            <h2>macOS</h2>
+            <a href="https://github.com/mncrp/monot/releases/download/build12/Monot-2.0.0-universal.dmg">.dmg：Universal</a><hr>
+            <p>代表Sorakimeの開発環境がmacOSです。実際にインストールして問題なく動作を確認済み。</p>
+          </span>
+          <span>
+            <h2>Windows</h2>
+            <a href="https://github.com/mncrp/monot/releases/download/build12/Monot.Setup.2.0.0.exe">.exe：インストーラ</a>
+            <a href="https://github.com/mncrp/monot/releases/download/build12/Monot-v2.0.0-portable.exe">.exe：ポータブル</a><hr>
+            <p>数件の動作報告あり。</p>
+          </span>
+          <span>
+            <h2>Linux</h2>
+            <a href="https://github.com/mncrp/monot/releases/download/build12/Monot-2.0.0.AppImage">.appImage</a><hr>
+            <p>動作確認未検証。情報があれば提供していただけると幸いです。</p>
+          </span>
+        </div>
+      </div>
       <div id="developers">
+        <h1>Monotのユニークな開発者たち</h1>
+        <br>
         <developer-element data-developer="sorakime"></developer-element>
         <developer-element data-developer="waryu_ynd"></developer-element>
         <developer-element data-developer="comamoca"></developer-element>
@@ -226,12 +126,25 @@
         <developer-element data-developer="mf7cli"></developer-element>
         <developer-element data-developer="cupmen"></developer-element>
       </div>
-      <div>
-        <a href="./technical.html">技術仕様</a>
-        <a href="./android/">Monot for Android</a>
-        <a href="/docs/monot/">ドキュメント</a>
+      <div id="learn">
+        <h3>Monotについて知る</h3>
+        <ul>
+          <li><a href="./technical.html">技術仕様</a></li>
+          <li><a href="./android/">Monot for Android</a></li>
+          <li><a href="/docs/monot/">ドキュメント</a></li>
+        </ul>
       </div>
     </main>
     <script src="/script/preload.js"></script>
+    <script src="/script/scroll-anim.js"></script>
+    <script>
+      function show(num = 1) {
+        const el = document.getElementById('showed');
+        if (num === 1)
+          el.className = 'op'
+        else
+          el.className = ''
+      }
+    </script>
   </body>
 </html>

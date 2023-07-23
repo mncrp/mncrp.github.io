@@ -1,0 +1,255 @@
+:root {
+  --white: #fff;
+}
+
+main, body main {
+  padding: 0;
+  width: 100%;
+}
+main > div {
+  height: calc(100vh - 50px);
+  display: flex;
+}
+
+#top {
+  flex-direction: column;
+  background-color: var(--white);
+}
+#top-text, #top-image {
+  height: 50%;
+  min-height: 50%;
+  max-height: 50%;
+  width: 100%;
+  text-align: center;
+}
+#top-text {
+  position: relative;
+}
+#top-text-content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+}
+#top-text-content a {
+  color: #222;
+  background-color: #ddd;
+  margin: 5px;
+  padding: 7px 10px;
+  border-radius: 30px;
+  box-shadow: 0 0 0 #0000;
+  transition: box-shadow .3s ease-in-out;
+}
+#top-text-content a:hover {
+  box-shadow: 0 0 15px 5px #8889;
+}
+#top-text-content a::after {
+  display: none;
+}
+#top-image {
+  overflow: hidden;
+}
+
+#hello > * {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+#hello .left {
+  text-align: right;
+  padding-left: 10vw;
+  box-sizing: border-box;
+}
+#hello .left * {
+}
+#hello .left span {
+  padding-left: 15%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+#hello .left h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+#hello .left p {
+  font-size: 30px;
+  font-weight: 400;
+}
+#hello .right img {
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 3s ease-in-out;
+}
+#hello .right .scroll-anim:not(.showed) {
+  left: 100vw;
+  transition: all 0s ease-in-out;
+}
+
+#new-home {
+  background-color: var(--white);
+}
+#new-home > * {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+#new-home .right span {
+  padding-right: 15%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+#new-home .left img {
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 4s ease-in-out;
+}
+#new-home .left .scroll-anim:not(.showed) {
+  left: -100vw;
+  transition: all 0s ease-in-out;
+}
+
+#more {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+#grid {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#grid p {
+  margin: 5px;
+  padding: 10px 20px;
+  padding-right: 30%;
+  border-radius: 20px;
+  background-color: var(--white);
+  font-size: 2rem;
+  background-position: right bottom;
+  background-size: contain;
+}
+#grid p.right {
+  padding: 5px 20px;
+  padding-left: 30%;
+  background-position: left bottom;
+  text-align: right;
+}
+#grid p:nth-child(1) {
+  background-image: url('/image/monot/engines.png');
+}
+#grid p:nth-child(2) {
+  background-image: url('/image/monot/overflow.png');
+}
+#grid p:nth-child(3) {
+  padding-right: 20px;
+  background-image: url('/image/monot/native.png');
+}
+#grid p:nth-child(4) {
+  background-image: url('/image/monot/design.png');
+}
+#grid p:nth-child(5) {
+  background-image: url('/image/monot/bug.png');
+}
+#grid p:nth-child(6) {
+  position: relative;
+  padding: 10px 20px;
+  background-image: url('/image/monot/old-functions.png');
+  background-color: #fff3;
+  background-position: 20px bottom;
+  background-size: 50%;
+}
+#grid p:nth-child(6) span {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 20px;
+}
+
+
+#developers, #learn {
+  height: fit-content;
+  display: block;
+}
+
+#download {
+  background-color: var(--white);
+  flex-direction: column;
+}
+#download div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#download div span {
+  margin: 15px;
+}
+#download h2 {
+  font-size: 50px;
+}
+#download a {
+  display: block;
+  font-size: 25px;
+  background-color: #9999;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+#developers, #learn, #more, #download {
+  width: 1300px;
+  padding: 40px calc(50vw - 650px);
+  box-sizing: content-box;
+}
+
+#learn {
+  background-color: var(--white);
+}
+
+#showed {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 8000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000a;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+#showed.op {
+  display: flex;
+}
+#showed-wrapper {
+  background-color: #fff4;
+  display: inline-block;
+  margin: auto;
+  padding: 40px 50px;
+  border-radius: 25px;
+}
+#showed-wrapper span {
+  display: block;
+  text-align: right;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --white: #000;
+  }
+}
