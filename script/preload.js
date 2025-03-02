@@ -169,13 +169,12 @@ const developer = {
   flatponch: {
     name: 'FlatPonch',
     role: '',
-    bio: 'Monot for Desktopの一人です',
+    bio: '多分なんかやってそうでやってない人',
     project: `
       <a href="/project/monot">Monot for Desktop</a>
     `,
     link: `
       <a href="https://flatponch.github.io/">Website</a>
-      <a href="https://linktr.ee/FrutPonch">Social Media</a>
     `
   },
   mf7cli: {
