@@ -6,7 +6,7 @@ main#member > #members {
 .news {
   display: flex;
   position: relative;
-  background-color: #f6f6f6;
+  background-color: #111111;
   box-shadow: 0px 0px 10px #8888;
   border-radius: 5px;
   overflow: hidden;
