@@ -1,3 +1,27 @@
+/* Default (light theme) */
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-box-shadow-color: rgba(0, 0, 0, 0.2);
+  --left-background-color: #333333;
+  --left-text-color: #ffffff;
+  --link-color: #777;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --box-shadow-color: rgba(255, 255, 255, 0.1);
+    --hover-box-shadow-color: rgba(255, 255, 255, 0.2);
+    --left-background-color: #ffffff;
+    --left-text-color: #333333;
+    --link-color: #ccc;
+  }
+}
+
 main#member > #members {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -6,8 +30,8 @@ main#member > #members {
 .news {
   display: flex;
   position: relative;
-  background-color: #f6f6f6;
-  box-shadow: 0px 0px 10px #8888;
+  background-color: var(--background-color);
+  box-shadow: 0px 0px 10px var(--box-shadow-color);
   border-radius: 5px;
   overflow: hidden;
   margin: 20px;
@@ -24,13 +48,13 @@ main#member > #members {
   width: 40%;
   height: 10px;
   border-radius: 0 0 15px 0;
-  background-color: #888;
+  background-color: var(--left-background-color);
 }
 :is(.member, .news) .left {
   min-width: 170px;
   max-width: 170px;
-  background-color: #111111;
-  color: #fff;
+  background-color: var(--left-background-color);
+  color: var(--left-text-color);
   z-index: +5;
 }
 .left .icon {
@@ -49,11 +73,12 @@ main#member > #members {
 }
 .right p {
   font-size: 20px;
+  color: var(--text-color);
 }
 :is(.link, .project) p {
   margin-top: 10px;
   font-size: 17px;
-  color: #777;
+  color: var(--link-color);
   font-family: 'Nunito';
 }
 .project a {
@@ -62,7 +87,7 @@ main#member > #members {
 }
 
 .news:hover {
-  box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 10px var(--hover-box-shadow-color);
 }
 
 .sorakime .icon {
